@@ -85,8 +85,6 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `MapieMamunhe`, `interview-react-search-synonyms`, `twitter_handle`, `Mamunhe`, `gmail`, `mmamunhe`, `English Word Synonyms Finder`, `Pratice for react interview, simple app for searching Synonyms for english words`
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -108,26 +106,17 @@ To get a local copy up and running follow these simple example steps.
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+ 
+ ### Installation
+ 
+1. Clone the repo
    ```sh
    git clone https://github.com/MapieMamunhe/interview-react-search-synonyms.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
