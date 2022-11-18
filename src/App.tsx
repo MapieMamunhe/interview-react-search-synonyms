@@ -1,34 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
+import Form from "./components/Form";
+import { useQuery } from "react-query";
 
+const apiData = async (param: string) => {
+  const data = await fetch(`http://api.datamuse.com/words?ml=${param}`);
+  return data.json();
+};
 function App() {
-  const [count, setCount] = useState(0)
+  //const [synonyms, setSynonyms] =useState("");
 
+  const [textToSearch, setTextToSearch] = useState("");
+  const [validSearch, setValidSearch] = useState("");
+  const { isLoading, error, data } = useQuery<
+    boolean,
+    any,
+    { word: string; score: number; tags: string }[]
+  >(["wordsData", validSearch], () => apiData(textToSearch));
+  console.log(data);
   return (
     <div className="App">
+      <Form textToSearch={textToSearch} setTextToSearch={setTextToSearch} />
+      <input
+        type="button"
+        value="Search"
+        onClick={() => setValidSearch(textToSearch)}
+      />
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        {isLoading || !data ? (
+          <>Nothing Yet...</>
+        ) : (
+          data.map((word) => <p key={word.score + word.word}>{word.word}</p>)
+        )}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
