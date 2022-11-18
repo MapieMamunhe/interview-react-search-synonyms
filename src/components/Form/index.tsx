@@ -37,6 +37,7 @@ const Form: React.FC<Props> = ({
         <input
           type="text"
           id="word"
+          value={input}
           onChange={(e) => {
             console.log(e.currentTarget.value);
             setInput(e.currentTarget.value);
