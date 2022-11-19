@@ -5,7 +5,7 @@ import Form from "./components/Form";
 import { useQuery } from "react-query";
 
 const apiData = async (param: string) => {
-  const data = await fetch(`http://api.datamuse.com/words?ml=${param}`);
+  const data = await fetch(`https://api.datamuse.com/words?rel_syn=${param}`);
   return data.json();
 };
 function App() {
