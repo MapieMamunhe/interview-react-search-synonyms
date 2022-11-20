@@ -19,6 +19,7 @@ function App() {
   console.log(data);
   return (
     <div className={AppStyles.App}>
+      <h1>Search For Synonyms</h1>
       <Form setValidSearch={setValidSearch} />
       <div>
         {isLoading || !data ? (
