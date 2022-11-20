@@ -21,13 +21,15 @@ function App() {
     <div className={AppStyles.App}>
       <h1>Search For Synonyms</h1>
       <Form setValidSearch={setValidSearch} />
-      <div>
-        {isLoading || !data ? (
-          <>Nothing Yet...</>
-        ) : (
-          data.map((word) => <p key={word.score + word.word}>{word.word}</p>)
-        )}
-      </div>
+      {isLoading || !data ? (
+        <div>Nothing Yet...</div>
+      ) : (
+        <div>
+          {data.map((word) => (
+            <p key={word.score + word.word}>{word.word}</p>
+          ))}
+        </div>
+      )}
       <footer className={AppStyles.gotoTop}>
         <ul className={AppStyles.footer}>
           <a href="#word">
