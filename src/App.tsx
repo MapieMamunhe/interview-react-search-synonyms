@@ -28,9 +28,18 @@ function App() {
           data.map((word) => <p key={word.score + word.word}>{word.word}</p>)
         )}
       </div>
-      <a href="#word" className={AppStyles.gotoTop}>
-        <button>Top</button>
-      </a>
+      <footer className={AppStyles.gotoTop}>
+        <ul className={AppStyles.footer}>
+          <a href="#word">
+            <li>
+              <button>Top</button>
+            </li>
+          </a>
+          <a target="_blank" href="https://github.com/MapieMamunhe">
+            <li>Mapie Mamunhe - Github</li>
+          </a>
+        </ul>
+      </footer>
     </div>
   );
 }

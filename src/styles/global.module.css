@@ -4,7 +4,24 @@
 }
 
 .gotoTop {
-  position: fixed;
-  bottom: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 100%;
   right: 0;
+  left: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  background-color: beige;
+}
+.footer li {
+  list-style: none;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  height: 100%;
 }
