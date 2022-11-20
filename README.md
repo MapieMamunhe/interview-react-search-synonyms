@@ -33,7 +33,11 @@
     <img src="public/App-Design.png" alt="Logo" width="338" height="366">
   </a>
 
-<h3 align="center">English Word Synonyms Finder</h3>
+<h3 align="center">
+
+[Visit English Word Synonyms Finder](https://interview-react-search-synonyms.vercel.app/)
+
+</h3>
 
   <p align="center">
     Pratice for react interview, simple app for searching Synonyms for english words
@@ -81,7 +85,7 @@
 
 - [![React][react.js]][react-url]
 - ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-- Datamuse.com
+- [Datamuse.com](Datamuse.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,8 +118,19 @@ This is an example of how to list things you need to use the software and how to
 
 ## Usage
 
+- Go to [this link](https://interview-react-search-synonyms.vercel.app/)
 
-- Go to this link
+  <a href="https://github.com/MapieMamunhe/interview-react-search-synonyms">
+  <img src="public/App-Design.png" alt="Logo" width="338" height="366">
+  </a>
+
+- Then type in a word [for example mobile] and the press [ENTER] or click on [SEARCH]
+
+  <a href="https://github.com/MapieMamunhe/interview-react-search-synonyms">
+  <img src="public/App-usage.png" alt="Logo" width="338" height="366">
+  </a>
+
+- You may click on [TOP] button to go to go back to the top of the page
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
