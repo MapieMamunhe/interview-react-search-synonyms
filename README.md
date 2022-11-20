@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/MapieMamunhe/interview-react-search-synonyms">
-    <img src="public/App-Design.png" alt="Logo" width="80" height="80">
+    <img src="public/App-Design.png" alt="Logo" width="338" height="366">
   </a>
 
 <h3 align="center">English Word Synonyms Finder</h3>
@@ -77,15 +77,11 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Built With
 
 - [![React][react.js]][react-url]
+- ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+- Datamuse.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,20 +114,12 @@ This is an example of how to list things you need to use the software and how to
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+
+- Go to this link
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-  - [ ] Nested Feature
 
 See the [open issues](https://github.com/MapieMamunhe/interview-react-search-synonyms/issues) for a full list of proposed features (and known issues).
 
@@ -166,19 +154,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - mmamunhe@gmail.com
+Mapie Mamunhe - mmamunhe@gmail.com
 
 Project Link: [https://github.com/MapieMamunhe/interview-react-search-synonyms](https://github.com/MapieMamunhe/interview-react-search-synonyms)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGMENTS -->
-
-## Acknowledgments
-
-- []()
-- []()
-- []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
