@@ -1,8 +1,7 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
 import Form from "./components/Form";
 import { useQuery } from "react-query";
+import AppStyles from "./styles/global.module.css";
 
 const apiData = async (param: string) => {
   const data = await fetch(`https://api.datamuse.com/words?rel_syn=${param}`);
@@ -11,22 +10,16 @@ const apiData = async (param: string) => {
 function App() {
   //const [synonyms, setSynonyms] =useState("");
 
-  const [textToSearch, setTextToSearch] = useState("");
   const [validSearch, setValidSearch] = useState("");
   const { isLoading, error, data } = useQuery<
     boolean,
     any,
     { word: string; score: number; tags: string }[]
-  >(["wordsData", validSearch], () => apiData(textToSearch));
+  >(["wordsData", validSearch], () => apiData(validSearch));
   console.log(data);
   return (
-    <div className="App">
-      <Form textToSearch={textToSearch} setTextToSearch={setTextToSearch} />
-      <input
-        type="button"
-        value="Search"
-        onClick={() => setValidSearch(textToSearch)}
-      />
+    <div className={AppStyles.App}>
+      <Form setValidSearch={setValidSearch} />
       <div>
         {isLoading || !data ? (
           <>Nothing Yet...</>
@@ -34,6 +27,9 @@ function App() {
           data.map((word) => <p key={word.score + word.word}>{word.word}</p>)
         )}
       </div>
+      <a href="#word" className={AppStyles.gotoTop}>
+        <button>Top</button>
+      </a>
     </div>
   );
 }

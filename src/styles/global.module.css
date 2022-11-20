@@ -1,0 +1,10 @@
+.App {
+  display: grid;
+  place-items: center;
+}
+
+.gotoTop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}

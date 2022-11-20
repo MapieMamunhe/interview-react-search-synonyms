@@ -1,29 +1,28 @@
 import React, { useState } from "react";
 
 // import { Container } from './styles';
-const styles = {
-  center: {
-    textAlign: "center",
-  },
-};
 interface Props {
-  textToSearch: string;
-  setTextToSearch: React.SetStateAction<any>;
+  setValidSearch: React.SetStateAction<any>;
 }
-const Form: React.FC<Props> = ({
-  textToSearch: input,
-  setTextToSearch: setInput,
-}: Props) => {
+const Form: React.FC<Props> = ({ setValidSearch }: Props) => {
+  const styles = {
+    textAlign: "center",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+  };
+  const [input, setInput] = useState("");
   return (
-    <form>
-      <p
-        style={{
-          textAlign: "center",
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-        }}
-      >
+    <form
+      onSubmit={() => setValidSearch(input)}
+      style={{
+        textAlign: "center",
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+      }}
+    >
+      <p>
         <label
           htmlFor="word"
           style={{
@@ -44,6 +43,9 @@ const Form: React.FC<Props> = ({
           }}
           style={{ textAlign: "center" }}
         />
+      </p>
+      <p>
+        <button type="submit">Fetch Synonym</button>
       </p>
     </form>
   );
