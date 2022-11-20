@@ -14,7 +14,10 @@ const Form: React.FC<Props> = ({ setValidSearch }: Props) => {
   const [input, setInput] = useState("");
   return (
     <form
-      onSubmit={() => setValidSearch(input)}
+      onSubmit={(e) => {
+        e.preventDefault();
+        setValidSearch(input);
+      }}
       style={{
         textAlign: "center",
         display: "flex",
