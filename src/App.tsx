@@ -16,7 +16,6 @@ function App() {
     any,
     { word: string; score: number; tags: string }[]
   >(["wordsData", validSearch], () => apiData(validSearch));
-  console.log(data);
   return (
     <div className={AppStyles.App}>
       <h1>Search For Synonyms</h1>

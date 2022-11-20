@@ -38,7 +38,6 @@ const Form: React.FC<Props> = ({ setValidSearch }: Props) => {
           id="word"
           value={input}
           onChange={(e) => {
-            console.log(e.currentTarget.value);
             setInput(e.currentTarget.value);
           }}
           style={{ textAlign: "center" }}
