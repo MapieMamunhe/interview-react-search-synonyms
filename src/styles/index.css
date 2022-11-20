@@ -71,6 +71,16 @@ button:focus-visible {
   input[type="text"] {
     font-size: 1.5em;
   }
+  @media only screen and (max-width: 300px) {
+    h1,
+    input[type="text"] {
+      font-size: 1em;
+    }
+  }
+  .App {
+    display: grid;
+    place-items: center;
+  }
 }
 @media (prefers-color-scheme: light) {
   :root {

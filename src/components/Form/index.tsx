@@ -43,7 +43,7 @@ const Form: React.FC<Props> = ({ setValidSearch }: Props) => {
           onChange={(e) => {
             setInput(e.currentTarget.value);
           }}
-          style={{ textAlign: "center" }}
+          style={{ textAlign: "center", width: "10em" }}
         />
       </p>
       <p>
