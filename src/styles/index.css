@@ -15,8 +15,6 @@
   -webkit-text-size-adjust: 100%;
 }
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 ul {
@@ -41,6 +39,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  padding-bottom: 2.5em;
 }
 
 h1 {
